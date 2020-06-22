@@ -1,0 +1,131 @@
+$primary: #0091F8;
+$complementary: #f86700;
+$analogous1: #00f8e3;
+$analogous2: #0015f8;
+
+.my-jumbotron {
+    width: 100%;
+    height: 100vH;
+    background-image: url("src/assets/lecture_jumbotron.jpg");
+    background-size: cover;
+    display: flex;
+    opacity: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.title{
+    font-size: 3em;
+    color: #000000;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.subtitle{
+    color: #000000;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+}
+
+.video-title{
+    color: #000000;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 2px;
+    height: auto;
+}
+
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.button{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+$primary: #0091F8;
+$complementary: #f86700;
+$analogous1: #00f8e3;
+$analogous2: #0015f8;
+
+.title{
+    font-size: 3em;
+    letter-spacing: 3px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.row{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.video{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.card{
+    background-color: $primary;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 7px 7px 5px #0e0e0e;
+    text-align: center;
+}
+
+.card:hover{
+    background-color: lighten($complementary, 10)
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width: 1024px){
+    .title{
+        font-size: 4rem;
+        text-align: left;
+        width: 100%;
+        margin-left: 3rem;
+        overflow: hidden;
+        letter-spacing: normal;
+    }
+
+    .video-title{
+        color: #000000;
+        width: 100%;
+        text-align: center;
+        letter-spacing: 2px;
+        height: auto;
+    }
+
+    .subtitle{
+        font-size: 2rem;
+        width: 100%;
+        text-align: left;
+        overflow: hidden;
+        margin-left: 3rem;
+        justify-content: left;
+    }
+    .my-jumbotron{
+        overflow: hidden;
+    }
+}
