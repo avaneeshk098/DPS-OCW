@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subject } from 'rxjs';
 import { NgxSpinnerService } from 'ngx-spinner';
+import { HttpClient } from '@angular/common/http'; 
 import { YoutubeService } from '../youtube.service';
 import { takeUntil } from 'rxjs/operators';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -25,13 +26,12 @@ export class VideosComponent implements OnInit {
     },3000)
     this.videos = [];
     this.youTubeService
-      .getVideosForChannel('UC_LtA_EtCr7Jp5ofOsYt18g', 15)
+      .getVideosForChannel('UC0gUrbt-AYy9RVkK9qjMJFw', 15)
       .pipe(takeUntil(this.unsubscribe$))
       .subscribe(lista => {
         for (let element of lista["items"]) {
           this.videos.push(element);
         }
-
       });
   }
 }

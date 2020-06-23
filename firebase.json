@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/DPSOCW-test",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
